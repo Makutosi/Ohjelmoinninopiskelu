@@ -1,0 +1,47 @@
+<!--Viikon 2 ensimmäiset harjoitukset/Tehtävä 5 v2/Eriko Korhonen/15.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>käännös</title>
+    <link rel="stylesheet" href="t5v2.css">
+  <!--  <script src="t5v2.js"></script>-->
+  </head>
+
+  <body>
+    <h1>Tehtävä 5</h1>
+    <p>Valitse Kieli</p>
+    <p>"Hei maailma!" on <span id="span1"></span></p>
+<form name="form1">
+	<select name="color1">
+	    <option value="Bonjour le monde!">ranska</option>
+	    <option value="Hola Mundo!">espanja</option>
+	    <option value="Hallo Weld!">saksa</option>
+	</select>
+</form>
+<input type="button" value="käännä" onclick="clickBtn1()"/>
+
+<script>
+function clickBtn1(){
+
+	const color1 = document.form1.color1;
+
+
+	const num = color1.selectedIndex;
+	//const num = document.form1.color1.selectedIndex;
+
+
+	const str = color1.options[num].value;
+	//const str = document.form1.color1.options[num].value;
+
+	document.getElementById("span1").textContent = str;
+}
+</script>
+
+
+
+
+
+
+  </body>
+</html>
