@@ -1,0 +1,42 @@
+<!--Viikon 2 toiset harjoitukset/ehto3v1/Eriko Korhonen/10.4.2021-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Karkausvuosi</title>
+<style>
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   background-color:yellow;
+   text-align:center;
+}
+.result {
+   font-size: 18px;
+   font-weight: 500;
+   color: blueviolet;
+}
+</style>
+</head>
+
+<body>
+<h1>Ehto 3v1</h1>
+<p>Onko karkausvuosi?</p>
+Syötä vuosiluku <input class="year" type="text" >
+<button class="Btn">CHECK</button>
+<div class="result"></div>
+
+<script>
+let resultEle = document.querySelector(".result");
+let yearEle = document.querySelector(".year");
+document.querySelector(".Btn").addEventListener("click", () =>
+{
+   if (yearEle.value % 4 == 0)
+   {
+      resultEle.innerHTML = yearEle.value + " on karkausvuosi! ";
+   }
+   else resultEle.innerHTML = yearEle.value + " ei ole karkausvuosi.";
+});
+</script>
+</body>
+</html>

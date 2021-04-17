@@ -1,0 +1,43 @@
+<!--Viikon2toiset harjoitukset/ehto4/Eriko Korhonen/4.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tulo</title>
+    <link rel="stylesheet" href="ehto4.css">
+  </head>
+  <body>
+    <h1>Laske yhteen</h1>
+    <h1 id="answer"></h1>
+    <p>Syötä viisi lukua</p>
+    Num 1 <input type="text"id="num1"><br><br>
+    Num 2 <input type="text"id="num2"><br><br>
+    Num 3 <input type="text"id="num3"><br><br>
+    Num 4 <input type="text"id="num4"><br><br>
+    Num 5 <input type="text"id="num5"><br><br>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+      function calculate()
+      {
+        var field1 = document.getElementById("num1").value;
+        var field2 = document.getElementById("num2").value;
+        var field3 = document.getElementById("num3").value;
+        var field4 = document.getElementById("num4").value;
+        var field5 = document.getElementById("num5").value;
+
+        var result = parseFloat(field1) + parseFloat(field2);
+                   + parseFloat(field3) + parseFloat(field4) + parseFloat(field5);
+        if (!isNan(result))
+        {
+          document.getElementById("answer").innerHTML="Summa on "+result;
+        }
+      }
+
+    </script>
+
+
+
+
+  </body>
+</html>
