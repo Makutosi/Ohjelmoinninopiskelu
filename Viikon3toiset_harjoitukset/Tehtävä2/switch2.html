@@ -1,0 +1,69 @@
+<!--Viikon 3 toiset harjoitukset/Tehtävä 2/Eriko Korhonen/14.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>arpapeli</title>
+    <h2>Tehtävä 2</h2>
+
+    <style>
+    body {
+      text-align:center;
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      background-color:beige;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+      cursor: pointer;
+      transition: 0.8s;
+      margin: 0 8px 8px 0;
+      text-align: center;
+      line-height: 100px;
+    }
+    .win {
+      background: orange;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+    .lose {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <script>
+   'use strict';
+
+   const num =5;
+   const winner = Math.floor(Math.random() * num); // 0 - 4
+
+   for (let i = 0; i < num; i++) {
+     const div = document.createElement('div');
+     div.classList.add('box');
+
+     div.addEventListener('click', () => {
+       if (i === winner) {
+         div.textContent = 'Voitto!';
+         div.classList.add('win');
+       } else {
+         div.textContent = 'Häviö...';
+         div.classList.add('lose');
+       }
+     });
+
+     document.body.appendChild(div);
+   }
+  </script>
+
+  <p>Klikkaa laatikkoa!</p>
+</body>
+
+
+</html>

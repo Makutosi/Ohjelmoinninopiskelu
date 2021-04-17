@@ -1,0 +1,31 @@
+<!--Viikon 3 toiset harjoitukset/Tehtävä 1/Eriko Korhonen/14.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>scrabble</title>
+    <link rel="stylesheet" href="switch1.css">
+    <script src="switch1.js"></script>
+  </head>
+
+  <body>
+    <h1>Tehtävä 1</h1>
+    <h3>Scrabble-peli</h3>
+    <p>Syötä Scrabble-pelin sana ja
+      ohjelma laskee kirjain pisteet.</p>
+    <ul>
+      <li>Vokaalit: A, E, I, O, U = 1p</li>
+      <li>S, C, R, B, L = 2p</li>
+      <li>Umlaut: Ä, Ö, Ü = 5p</li>
+      <li>X, Y, Z, W = 8p</li>
+      <li>K, G, P = 10p</li>
+      <li>muut kirjaimet = 3p</li>
+    </ul>
+    <form class="" action="index.html" method="post">
+      <p>Syötä sana: <input type="text" id="scsana" value=""></p>
+      <button type="button" name="button" onclick="laskePisteet()">Enter</button>
+      <div id="tscrabble"></div>
+    </form>
+
+  </body>
+</html>
