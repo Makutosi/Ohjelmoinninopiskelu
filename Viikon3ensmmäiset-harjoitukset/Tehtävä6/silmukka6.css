@@ -1,0 +1,7 @@
+/*Viikon 3 ensimmäiset harjoitukset/Tehtävä 6/Eriko Korhonen/6.4.2021*/
+body{
+  text-align: center;
+  font-size: 1.5rem;
+  height: 1000px;
+  background: linear-gradient(to right, #9966ff 0%, #99ff66 100%);
+}

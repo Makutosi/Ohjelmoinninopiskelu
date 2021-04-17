@@ -1,0 +1,7 @@
+/*Viikon 3 ensimmäiset harjoitukset/Tehtävä 10/Eriko Korhonen/13.4.2021*/
+body{
+  text-align: center;
+  font-style: 1.5rem;
+  height:1000px;
+  background: linear-gradient(to left, #ccff33 0%, #99cc00 100%);
+}

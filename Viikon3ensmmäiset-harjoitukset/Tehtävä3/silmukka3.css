@@ -1,0 +1,7 @@
+/*Viikon 3 ensimmäiset harjoitukset/Tehtävä 3/Eriko Korhonen*/
+body{
+  text-align: center;
+  font-size: rem1.5;
+  height: 1000px;
+  background: linear-gradient(to bottom, #ccff33 0%, #ff99cc 100%);
+}

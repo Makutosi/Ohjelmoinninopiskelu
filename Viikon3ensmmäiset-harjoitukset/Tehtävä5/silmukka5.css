@@ -1,0 +1,10 @@
+/*Viikon 3 ensimmäiset harjoitukset/Tehtävä 5/Eriko Korhonen/5.4.2021*/
+body{
+  text-align: center;
+  font-size: 1.5rem;
+  height: 1000px;
+  background: linear-gradient(to left, #9966ff 0%, #6699ff 100%);
+}
+.marker-pink {
+background: linear-gradient(transparent 60%, #ff99cc 0%);
+}
