@@ -1,4 +1,5 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 11/Eriko Korhonen/13.4.2021
+//tämä on vielä kesken
 function llisettomat()
 {
   var nro1, nro2, palku, ralku, psumma=0, rsumma=0, pluvut='', rluvut='';
