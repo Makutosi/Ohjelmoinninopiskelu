@@ -1,4 +1,4 @@
-//Viikon 3 ensimmäiset harjoitukset/Tehtävä 2/ERiko Korhonen/14.4.2021
+//Viikon 3 ensimmäiset harjoitukset/Tehtävä 2/Eriko Korhonen/14.4.2021
 function muutaSalasanaksi()
 {
   var sana = document.getElementById('sana').value;
