@@ -12,17 +12,17 @@
     <h1>Tehtävä 5</h1>
     <p>Valitse Kieli</p>
     <p>"Hei maailma!" on <span id="span1"></span></p>
-<form name="form1">
+    <form name="form1">
 	<select name="color1">
 	    <option value="Bonjour le monde!">ranska</option>
 	    <option value="Hola Mundo!">espanja</option>
 	    <option value="Hallo Weld!">saksa</option>
 	</select>
-</form>
-<input type="button" value="käännä" onclick="clickBtn1()"/>
+     </form>
+     <input type="button" value="käännä" onclick="clickBtn1()"/>
 
-<script>
-function clickBtn1(){
+     <script>
+        function clickBtn1(){
 
 	const color1 = document.form1.color1;
 
@@ -35,13 +35,8 @@ function clickBtn1(){
 	//const str = document.form1.color1.options[num].value;
 
 	document.getElementById("span1").textContent = str;
-}
-</script>
+        }
+      </script>
 
-
-
-
-
-
-  </body>
+   </body>
 </html>
