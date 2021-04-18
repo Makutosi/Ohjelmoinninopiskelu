@@ -7,30 +7,33 @@
     <meta charset="utf-8">
     <title>Viikonpäivä</title>
     <link rel="stylesheet" href="ehto2.css">
-<body>
-<h1>Ehto 2</h1>
-<p>Mikä viikonpäivä tänään on?</p>
+  </head>
+  
+  <body>
+    <h1>Ehto 2</h1>
+    <p>Mikä viikonpäivä tänään on?</p>
 
-<button onclick="myFunction()">Tänään on</button>
+    <button onclick="myFunction()">Tänään on</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-function myFunction() {
-  var d = new Date();
-  var weekday = new Array(7);
-  weekday[0] = "Sunnuntai!";
-  weekday[1] = "Maanantai!";
-  weekday[2] = "Tiistai!";
-  weekday[3] = "Keskiviikko!";
-  weekday[4] = "Torstai!";
-  weekday[5] = "Perjantai!";
-  weekday[6] = "Lauantai!";
+    <script>
+     function myFunction() 
+     {
+     var d = new Date();
+     var weekday = new Array(7);
+     weekday[0] = "Sunnuntai!";
+     weekday[1] = "Maanantai!";
+     weekday[2] = "Tiistai!";
+     weekday[3] = "Keskiviikko!";
+     weekday[4] = "Torstai!";
+     weekday[5] = "Perjantai!";
+     weekday[6] = "Lauantai!";
 
-  var n = weekday[d.getDay()];
-  document.getElementById("demo").innerHTML = n;
-}
-</script>
+     var n = weekday[d.getDay()];
+     document.getElementById("demo").innerHTML = n;
+     }
+    </script>
 
-</body>
-</html>
+   </body>
+ </html>
