@@ -1,4 +1,5 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 8/Eriko Korhonen/12.4.2021
+// Ei tämä vaan Tehtävä 8v1
 function potenssi()
 {
   var koro = document.getElementById('kor').value;
