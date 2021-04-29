@@ -1,13 +1,14 @@
 //Viikon 3 ensimmäiset harjoitukset!Tehtävä 1/Eriko Korhonen/14.4.2021
-function tulostaParilliset()
+function kaikkiParilliset()
 {
-  var arvo = parseInt(document.getElementById('even').value);
-  var jono = "<p>";
-  for(var i = 2; i <= arvo; i= i+2)
+  var num = parseInt(document.getElementById('even').value);
+  var line = "<p>";
+  for(var i = 2; i <= num; i= i+2)
   {
-    jono+=i;
-    jono+=" ";
+    line+=i;
+    line+=" ";
   }
-  jono+="</p>";
-    document.getElementById('parilliset').innerHTML = jono;
+  line+="</p>";
+    document.getElementById('parilliset').innerHTML = line;
 }
+// +=    x += y   x = x + y
