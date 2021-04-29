@@ -1,0 +1,36 @@
+<!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 8v1 oma versio/Eriko Korhonen/26.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>potenssi</title>
+    <link rel="stylesheet" href="silmukka8.css">
+  </head>
+
+  <body>
+    <h2>Tehtävä 8v1</h2>
+    <p>Anna kaksi lukua.<br>
+      Kone laskee ensimmäisen ja toisen luvun potenssin.</p>
+    <p>korotettava luku: <input type="text" id="luku1" value=""></p>
+    <p>potenssi: <input type="text" id="potenssi" value=""></p>
+    <button onclick="vastaus()">Enter</button>
+    <p id = "demo"></p>
+
+    <script>
+      function vastaus()
+      {
+        var luku1 = document.getElementById('luku1').value;
+        var potenssi = document.getElementById('potenssi').value;
+        vastaus = luku1;
+        for (var l = 1; l < potenssi; l++)
+        {
+          vastaus *= luku1;
+        }
+        document.getElementById("demo").innerHTML = vastaus;
+      }
+
+
+    </script>
+
+  </body>
+</html>
