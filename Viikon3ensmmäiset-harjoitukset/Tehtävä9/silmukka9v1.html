@@ -1,0 +1,45 @@
+<!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 9v1 oma versio/Eriko Korhonen/26.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>min+max</title>
+    <link rel="stylesheet" href="silmukka9.css">
+  </head>
+
+  <body>
+    <h2>Tehtävä 9v1</h2>
+    <p>Syötä viisi lukua</p>
+    <p>1: <input type="text" id="array[0]" value=""></p>
+    <p>2: <input type="text" id="array[1]" value=""></p>
+    <p>3: <input type="text" id="array[2]" value=""></p>
+    <p>4: <input type="text" id="array[3]" value=""></p>
+    <p>5: <input type="text" id="array[4]" value=""></p><br>
+    <p>Paina nappia ja saat syötetyistä luvuista
+       pienimmän ja isoimman arvon. </p>
+    <button onclick = "minMax()">Enter</button>
+    <p id = "demo"></p>
+
+    <script>
+      function minMax()
+      {
+        var numArray = [], all;
+        for (var x=0; x<5; x++)
+        {
+          all = document.getElementById('array['+x+']').value;
+          all = parseInt(all);
+          numArray.push(all);
+        }
+        numArray = numArray.sort((a,b) => a-b);
+        document.getElementById("demo").innerHTML =
+       '<p>Pienin luku on  ' + numArray[0]
+          +' ja isoin luku on  '+ numArray[numArray.length-1] + '.' ;
+      }
+
+    </script>
+
+
+
+
+  </body>
+</html>
