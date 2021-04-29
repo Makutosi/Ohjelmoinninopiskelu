@@ -1,4 +1,5 @@
-//Viikon3 ensimmäiset harjoitukset/Tehtävä 7/Eriko Korhonen/7.4.2021
+//Viikon3 ensimmäiset harjoitukset/Tehtävä 7/Eriko Korhonen/7.4.2021 
+// Ei tämä versio vaan Tehtävä 7v1
 function yhteen()
 {
   yhteensa = 0;
