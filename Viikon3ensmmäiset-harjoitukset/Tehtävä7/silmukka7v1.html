@@ -1,0 +1,31 @@
+<!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 7v1 valmis versio/Eriko Korhonen/25.4.2021-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>summa1</title>
+    <link rel="stylesheet" href="silmukka7.css">
+  </head>
+
+  <body>
+    <h2>Tehtävä 7 v1</h2>
+    <p>Paina nappia ja saat 10 ensimmäisen numeroiden summan.</p>
+    <p>1+2+3+4+5+6+7+8+9+10=</p>
+    <button onclick="summa()">Enter</button>
+    <p id = "demo"></p>
+    <script>
+      function summa()
+      {
+        tulo = 0;
+        for (var i = 1; i <=10; i++)
+        {
+          tulo += i;
+        }
+        document.getElementById("demo").innerHTML = tulo;
+      }
+
+    </script>
+
+
+  </body>
+</html>
