@@ -1,12 +1,12 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 4/Eriko Korhonen/4.4.2021
-function laskeKertoma()
+function count()
 {
-  var kerLuku = document.getElementById('kertoma').value;
-  var laskettu = 1;
-  for(var n = 1; n <= kerLuku; n++)
+  var a = document.getElementById('factorial').value;
+  var b = 1;
+  for(var n = 1; n <= a; n++)
   {
-    laskettu*=n;
+    b*=n;
   }
-  document.getElementById('kertomaVastaus').innerHTML =
-   '<p>Luvun ' + kerLuku + ' kertoma on '+laskettu + '</p>';
+  document.getElementById('answer').innerHTML =
+   '<p>Luvun ' + a + ' kertoma on '+ b + '</p>';
 }
