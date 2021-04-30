@@ -1,5 +1,5 @@
 //Viikon 2 ensimmäiset harjoitukset/Tehtävä1/Eriko Korhonen/4.4.2021
-function jarjesta()
+function arrange()
 {
  var x, y, z;
  x = parseInt(document.getElementById('num1').value);
@@ -12,7 +12,8 @@ function jarjesta()
    {
      document.write("Numerot järjestyksessä: " + x + ', ' + y + ', ' + z);
    }
-   else {
+   else
+   {
      document.write("Numerot järjestyksessä: " + x + ', ' + z + ', ' + y);
    }
  }
@@ -22,7 +23,8 @@ function jarjesta()
    {
      document.write("Numerot järjestyksessä: " + y + ', ' + x + ', ' + z);
    }
-   else {
+   else
+   {
      document.write("Numerot järjestyksessä: " + y + ', ' + z + ', ' + x);
 
    }
@@ -33,9 +35,15 @@ function jarjesta()
      {
        document.write("Numerot järjestyksessä: " + z + ', ' + x + ', ' + y);
      }
-     else {
+     else
+     {
        document.write("Numerot järjestyksessä: " + z + ', ' + y + ', ' + x);
 
      }
    }
  }
+
+ //parseInt( 'teksti');  muuttaa tekstin kokonaisluvuksi(integer)
+ //useampi if-else  if->else if(eka ehto on epä tosi)->else
+ //&& ja
+ //document.write("teksti"); kirjoittaa tekstiä suoraan HTML-asiakirjaan
