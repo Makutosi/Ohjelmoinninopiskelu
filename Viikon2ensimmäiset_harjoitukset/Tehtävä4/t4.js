@@ -1,5 +1,5 @@
 //Viikon 2 ensimmäiset harjoitukset/Tehtävä4/Eriko Korhonen/2.4.2021
-function ajoneuvo()
+function info()
   {
     var age = parseInt(document.getElementById('age').value);
     if(age < 16)
