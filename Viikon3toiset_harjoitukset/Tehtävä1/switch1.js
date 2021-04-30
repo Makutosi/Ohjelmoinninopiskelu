@@ -1,12 +1,13 @@
 //Viikon 3 toiset harjoitukset/Tehtävä 1/Eriko Korhonen/14.4.2021
-function laskePisteet()
+function count()
 {
   var pisteet = 0;
-  var sana = document.getElementById('scsana').value;
+  var sana = document.getElementById('scrabble').value;
   for(var i = 0; i < sana.length; i++)
   {
     switch (sana[i])
     {
+      // vaihtoehto 1
       // ensinnä pienet kirjaimet läpi, sitten isot kirjaimet
      case 'a':
      case 'e':
@@ -19,8 +20,9 @@ function laskePisteet()
      case 'O':
      case 'U':
         pisteet++;//+1p
-        break;
-      //
+        break; //lopetetaan break-komentoon, muuten ei lopu koskaan.
+
+      // vaihtoehto 2
       case 's':
       case 'c':
       case 'r':
@@ -33,7 +35,8 @@ function laskePisteet()
       case 'L':
         pisteet+=2;
         break;
-      //umlaut
+
+      // vaihtoehto 3,umlaut
       case 'ä':
       case 'ö':
       case 'ü':
@@ -43,6 +46,7 @@ function laskePisteet()
         pisteet+=5;
         break;
 
+      // vaihtoehto 4
       case 'x':
       case 'y':
       case 'z':
@@ -54,6 +58,7 @@ function laskePisteet()
         pisteet+=8;
         break;
 
+      // vaihtoehto 5
       case 'k':
       case 'g':
       case 'p':
@@ -63,10 +68,11 @@ function laskePisteet()
         pisteet+=10;
         break;
 
-      default:
+      default: // ja loput
         pisteet+=3;
     }
-    document.getElementById('tscrabble').innerHTML =
+    
+    document.getElementById('check').innerHTML =
     "<p>Sana " + sana + ":n"+ " pisteet ovat " + pisteet + "</p>";
   }
 }
