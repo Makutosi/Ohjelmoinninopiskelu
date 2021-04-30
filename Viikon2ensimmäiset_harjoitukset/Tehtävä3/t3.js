@@ -3,7 +3,7 @@ function check()
 {
   var inputNumber = document.getElementById("number").value;
   //parillinen
-  if ( inputNumber % 2 === 0)
+  if ( inputNumber % 2 === 0)//jaettuna kahdella on parillinen
   {
   alert(inputNumber + " on parillinen.");
   //pariton
