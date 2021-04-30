@@ -1,0 +1,42 @@
+<!--Viikon 2 toiset harjoitukset/ehto4v2/eriko Korhonen/24.4.2021-->
+<!--tämä toimii, mutta ei ole ohjeen mukaan-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>keskiarvo</title>
+    <link rel="stylesheet" href="ehto4.css">
+    <script type="text/javascript">
+      var lasku =
+    {
+        keskiarvo : function(luvut)
+      {
+				// parametrina luvut listassa
+        var summa = 0;
+				for (var i=0;i < luvut.length; i++)
+        { 		//lista läpi
+					summa = summa + parseFloat(luvut[i]);	// summa
+				}
+				var keskiarvo = summa / luvut.length;		//lukujen lukumäärällä jaettu
+        return keskiarvo;
+			 }
+     };
+
+  function laskeKeskiarvo()
+  {
+    var luvutJono = document.getElementById("luvut").value;
+	  var luvutTaulu = luvutJono.split(",");		// pilkulla
+    var ave = lasku.keskiarvo(luvutTaulu);
+    document.getElementById('tulos').innerHTML = ave; //vastauksen sijoitus
+  }
+
+    </script>
+  </head>
+
+  <body>
+     <h2>Syötä viisi lukua ja erota ne pilkuilla.</h2>
+     <input type="text" id="luvut" value="1,2,3,4,5" />
+     <input type="button" id="mybutton" value="lukujen keskiarvo on:" onClick="laskeKeskiarvo();" />
+     <div id="tulos"></div>
+  </body>
+</html>
