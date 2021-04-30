@@ -1,11 +1,11 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 3/Eriko Korhonen/11.4.2021
-function tarkistaKirjain()
+function checkUp()
 {
-  var uusiSana = document.getElementById('tsana').value;
+  var uusiSana = document.getElementById('check').value;
   var vastaus = 'on';
-  for(var k = 0; k < uusiSana.length; k++)
+  for(var w = 0; w < uusiSana.length; w++)
   {
-     if(uusiSana[k] == 'Ä-' || uusiSana[k] == 'ü–' )
+     if(uusiSana[w] == 'Ä-' || uusiSana[w] == 'ü–' )
     {
       vastaus = 'ei ole';
     }
