@@ -1,0 +1,10 @@
+/*Viikon 3 toiset harjoitukset/Tehtävä 2/Eriko Korhonen/20.4.2021*/
+body{
+  text-align: center;
+  font-size: 1.5rem;
+  height: 1000px;
+  /*background:linear-gradient
+  (to bottom right, #ffcc00 0%, #ccff99 100%);*/
+  background-color: pink;
+
+}
