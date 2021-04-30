@@ -4,21 +4,21 @@ function hipHeijaa()
   var tuloste = '';
   for(var x = 1; x <= 100; x++)
   {
-    if(x%3==0 && x%5==0)
+    if(x%3==0 && x%5==0) //jos kolmella ja viidellä jaollinen
     {
-      tuloste+='Hip Heijaa ';
+      tuloste+='Hip Heijaa  ';
     }
-    else if(x%5 == 0)
+    else if(x%5 == 0) //jos viidellä jaollinen
     {
-      tuloste+='Heijaa ';
+      tuloste+='Heijaa  ';
     }
-    else if(x%3 == 0)
+    else if(x%3 == 0) //jos kolemella jaollinen
     {
-      tuloste+='Hip ';
+      tuloste+='Hip  ';
     }
     else {
       tuloste+=x+' ';
     }
-    document.getElementById('lukujenTulostus').innerHTML = tuloste;
+    document.getElementById('output').innerHTML = tuloste;
   }
 }
