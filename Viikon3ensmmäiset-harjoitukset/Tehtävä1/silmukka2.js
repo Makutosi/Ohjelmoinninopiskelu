@@ -1,4 +1,6 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 2/ERiko Korhonen/14.4.2021
+// Tämä tiedoston pitäisi olla Tehtävä 2-kansiossa.
+
 function mitUmlaut()
 {
   var word = document.getElementById('word').value;
