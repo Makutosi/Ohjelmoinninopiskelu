@@ -1,4 +1,6 @@
 //Viikon2toiset harjoitukset ehto2v1/Eriko Korhonen/1.4.2021
+// Tämä tiedoston pitäisi olla Ehto2lauseita2-kansiossa.
+
 <script>
 var today = newDate();
 var week = today.getDay();
