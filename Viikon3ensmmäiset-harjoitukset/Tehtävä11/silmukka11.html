@@ -1,25 +1,23 @@
-<!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 11/Eriko Korhonen/13.4.2021-->
-<!--tämä on vielä kesken-->
+<!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 11/Eriko Korhonen/26.4.2021-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>even.odd.sum</title>
+    <title>Tulostus</title>
     <link rel="stylesheet" href="silmukka11.css">
     <script src="silmukka11.js"></script>
   </head>
 
   <body>
-     <h1>Tehtävä 11</h1>
-     <p>Anna pienempi ja isompi numeroa ja paina nappia,<br>
-       niin ohjelma näyttää valittujen numeroiden välissä olevat<br>
-       parilliset ja parittomat numerot sekä niiden summa.
-     </p>
-     <p>pienempi numero:  <input type="text" id="pnro" value=""></p>
-     <p>isompi numero:  <input type="text" id="inro" value=""></p>
-     <button type="button" id="button" onclick="evenodd()">Enter
-     </button>
-     <div id="lukujenTulostusPari"></div>
+    <h2>Tehtävä 11</h2>
+    <p>Syötä kaksi numeroa ja paina nappia.</p>
+    <p>Kone tulostaa lukujen väliltä parilliset ja parittomat numerot<br> sekä niiden summat.</p>
+
+    <p>pienempi numero:  <input type="text" id="small" value=""></p>
+    <p>isompi numero:  <input type="text" id="big" value=""></p>
+
+    <button type="button" id="button" onclick="numeroidenSumma()">Enter</button>
+    <div id="lukujenTulostus"></div>
 
   </body>
 </html>
