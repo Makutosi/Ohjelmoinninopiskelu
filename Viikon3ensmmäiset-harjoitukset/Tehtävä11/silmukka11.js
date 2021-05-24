@@ -1,15 +1,18 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 11/Eriko Korhonen/13.4.2021
-//tämä on vielä kesken
-function llisettomat()
+function numeroidenSumma()
 {
-  var nro1, nro2, palku, ralku, psumma=0, rsumma=0, pluvut='', rluvut='';
-  nro1 = parseInt(document.getElementById('pnro').value);
-  nro2 = document.getElementById('inro').value;
+  var nro1, nro2, palku, ralku,
+      psumma = 0, rsumma = 0, //Parillisten numeroiden summa, Parittomien numeroiden summa
+      pluvut ='', rluvut =''; // Parilliset, parittomat tulostetaan
+
+  nro1 = parseInt(document.getElementById('small').value);
+  nro2 = document.getElementById('big').value;
   if(nro1%2 == 0)
   {
     palku = nro1;
   }
-  else {
+  else
+  {
     palku = nro1+1;
   }
   for(var b = palku; b<=nro2; b+=2)
@@ -22,7 +25,8 @@ function llisettomat()
   {
     ralku = nro1+1;
   }
-  else {
+  else
+  {
     ralku = nro1;
   }
   for(var r = ralku; r<=nro2; r+=2)
@@ -30,7 +34,6 @@ function llisettomat()
     rluvut += r + ' ';
     rsumma += r;
   }
-  document.getElementById('lukujenTulostusPari').innerHTML =
-   '<p>Parilliset numerot: ' + pluvut +' ja niiden summa: ' + psumma + '</p>
-   <p>Parittomat luvut: ' + rluvut + ' ja niiden summa: '+ rsumma + '</p>';
+  document.getElementById('lukujenTulostus').innerHTML
+  = '<p>Parilliset numerot: ' + pluvut +' ja niiden summa: ' + psumma + '</p><p>Parittomat luvut: ' + rluvut + ' ja niiden summa: '+ rsumma + '</p>';
 }
