@@ -1,9 +1,7 @@
-/*Viikon 3 toiset harjoitukset/Tehtävä3/Eriko Korhonen/25.4.2021
-tämä on vielä kesken.*/
-body
-{
+/*Viikon 3 toiset harjoitukset/Tehtävä 3/Eriko Korhonen/15.4.2021*/
+body{
   text-align: center;
   font-size: 1.5rem;
   height: 1000px;
-  background: linear-gradient(to left, #ccffcc 0%, #ffffcc 100%);
+  background: pink;
 }
