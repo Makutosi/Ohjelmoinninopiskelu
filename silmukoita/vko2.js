@@ -5,7 +5,7 @@ function pieninSuurin(taulu)
   taulu.sort((a,b) => a-b);
   var pienin = taulu.shift();
   var suurin = taulu.pop();
-  console.log ("taulikon pienin oli: " + pienin + " ja suurin oli: " + suurin);
+  console.log ("taulukon pienin oli: " + pienin + " ja suurin oli: " + suurin);
 }
 pieninSuurin([6, 8, 2, 9, 5, 4, 7, 14, 44, 67, 99, 22, 33, 111, 1111, 11111]);
 
