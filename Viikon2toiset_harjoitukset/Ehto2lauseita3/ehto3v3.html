@@ -1,0 +1,39 @@
+<!-- Viikon 2 toiset harjoitukset/ehto 3v3/Eriko Korhonen/4.6.2021-->
+<!-- korjattu versio-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Karkausvuosi</title>
+    <link rel="stylesheet" href="ehto3.css">
+
+  <script>
+    function check_leapyear()
+    {
+      var vuosiluku = document.getElementById("year").value;
+      if ((vuosiluku % 4 == 0) && (vuosiluku % 100 != 0))
+      {
+        alert (vuosiluku+ " on karkausvuosi");
+      }
+      else if (vuosiluku % 400 == 0)
+      {
+        alert (vuosiluku+ " on karkausvuosi");
+      }
+      else
+      {
+        alert (vuosiluku+ " ei ole karkausvuosi" );
+      }
+    }
+
+  </script>
+  </head>
+
+  <body>
+    <h2>Onko karkausvuosi?</h2>
+    <form name="myform">
+    Syötä vuosiluku ja tarkista onko karkausvuosi?<br>
+    <input type="text" id="year" > <br><br>
+    <button onclick="check_leapyear()">tarkista</button>
+    </form>
+  </body>
+</html>
