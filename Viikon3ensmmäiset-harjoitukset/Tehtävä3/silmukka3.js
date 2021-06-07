@@ -1,13 +1,14 @@
 //Viikon 3 ensimmäiset harjoitukset/Tehtävä 3/Eriko Korhonen/11.4.2021
-function checkUp()
+// korjattu versio/ 4.6.2021
+function tsekataSana()
 {
   var uusiSana = document.getElementById('check').value;
-  var vastaus = 'on';
-  for(var w = 0; w < uusiSana.length; w++)
+  var vastaus = 'ei ole';
+  for(var i = 0; i < uusiSana.length; i++)
   {
-     if(uusiSana[w] == 'Ä-' || uusiSana[w] == 'ü–' )
+     if(uusiSana[i] == 'ö' || uusiSana[i] == 'Ö' )
     {
-      vastaus = 'ei ole';
+      vastaus = 'on!';
     }
   }
   document.getElementById('vastaus').innerHTML = '<p>' + vastaus + '</p>';
