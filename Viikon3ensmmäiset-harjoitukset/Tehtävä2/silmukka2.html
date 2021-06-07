@@ -1,21 +1,22 @@
 <!--Viikon 3 ensimmäiset harjoitukset/Tehtävä 2/Eriko Korhonen/14.4.2021-->
+<!-- korjattu versio/4.6.2021-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Umlaut 1</title>
+    <title>Uusi salasana</title>
     <link rel="stylesheet" href="silmukka2.css">
-    <script src="silmukka2.js"></script>
+    <script src="silmukka2v1.js"></script>
   </head>
 
   <body>
     <h2>Tehtävä 2</h2>
-    <p>Kirjoita sana ja paina enteria! </p>
+    <p>Kirjoita sana ja paina nappia! </p>
     <form class="" action="index.html" method="post">
-      <input type="text" id="word" value="">
-      <button type="button" name="button" onclick="mitUmlaut()">Enter</button>
+      <input type="text" id="sana" value="">
+      <button type="button" name="button" onclick="uusiSalasana()">Enter</button>
       <p>Uusi salasanasi on...</p>
-      <div id="password"></div>
+      <div id="salasana"></div>
     </form>
   </body>
   </html>
