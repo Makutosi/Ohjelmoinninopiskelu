@@ -1,0 +1,60 @@
+/* Yksinkertainen JavaScript tietovisa */
+body{
+  background: green;  /*taustaväri*/
+  color: #fff; /*valkoinen*/
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+#sisalto{
+  width: 60%;  /*koko leveydestä*/
+  background: #199fdb;
+  margin: 20px auto;  /*ylä- ja alamarginaali 20px, oikea- ja vasen auto*/
+  overflow: auto; /*scrollbar vain tarvittaessa*/
+  padding: 25px, /*sisämarginaali joka puolella*/
+}
+
+header{
+  text-align: center; /*teksti keskelle*/
+  border-bottom: #fff dashed 1px; /*otsikkoalueen alle katkoviiva*/
+}
+
+header h1{
+  margin: 0; /*h1-tekstin ulko- ja sisämarginaali*/
+  padding: 0;
+}
+
+header p{
+  padding: 0; /*otsikon varsinaisen tekstin sisämarginaali*/
+  margin-top: 5px; /*ulokomarginaali*/
+  color: #000; /* black*/
+}
+
+section {
+  min-height: 400px; /*section alue vähimmäiskorkeus*/
+  overflow: auto; /*scrollbar vain tarvittaessa*/
+}
+
+footer {
+  text-align: center;
+}
+
+input[type='submit']{ /*lähetä-painike, hakasulkeisa, koska on muita input komentoja*/
+  background: green; /*sama kuin bodyn*/
+  border: 0; /*ei ole reunuksia*/
+  color: #fff; /*valkoinen*/
+  padding: 10px 15px; /* sisämarginaali ylä ja ala, vasen ja oikea*/
+  cursor: pointer; /*kohdistin on pointteri*/
+  font-size: 14px;
+}
+
+#tulokset h3{
+  background: green; /*sama kuin bodyn*/
+  padding: 10px; /*sisämarginaali*/
+  margin: 10px 0; /*ulokomarginaali*/
+}
+
+#tulokset span{
+  color: #000; /*black*/
+  font-weight: bold; /*lihavoitu*/
+}
