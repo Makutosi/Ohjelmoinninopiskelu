@@ -27,3 +27,8 @@ function sortNumbers() {
     document.getElementById('result').innerHTML = "Sorted numbers: " + num1 + ', ' + num2 + ', ' + num3;
   }
   
+  /*
+  document.getElementById('first').value  HTMLの入力フィールドに入力された値を取得
+  parseInt  入力された値を文字列から整数に変換
+  
+  */
