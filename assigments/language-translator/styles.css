@@ -1,0 +1,21 @@
+/* Write a program that translates the text "Hello World" into the selected language 
+ (English, Swedish, Spanish) */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label, select, button, p {
+    margin: 10px 0;
+}
