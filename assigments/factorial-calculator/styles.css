@@ -1,0 +1,14 @@
+/* Write a program that calculates the product of a given number (e.g.: 4 -> 4*3*2*1 = 24) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
