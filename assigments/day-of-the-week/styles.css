@@ -1,0 +1,25 @@
+/* Press the button and it will print the day of the week */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px; /* 上部にスペースを設ける */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#dayDisplay {
+    margin-bottom: 20px; /* ボタンとの間隔を調整 */
+    font-size: 18px;
+    color: #333;
+}
+
