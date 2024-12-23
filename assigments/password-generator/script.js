@@ -47,7 +47,29 @@ function generatePassword(word) {
     +=を使用して文字列を動的に追加
     document.getElementByIdを使い、HTML内の要素を操作して表示結果を更新
     入力単語の長さに制限はなく、どんな文字列でも対応可能*/
-  
+
+//variation 1
+/* 
+function generatePassword(word) {
+  let password = '';
+  for (let i = 0; i < word.length; i++) {
+    password += word[i];   // 現在の文字を追加
+    password += '🌟';      // 「Ö」の代わりに絵文字を追加
+  }
+  return password;         // 最終的な結果を返す
+}
+
+document.getElementById('generateButton').addEventListener('click', function() {
+  const word = document.getElementById('wordInput').value;  // ユーザーの入力を取得
+  const result = generatePassword(word);                   // 結果を生成
+  document.getElementById('result').textContent = result;  // 結果を画面に表示
+});
+*/
+//  入力: Password
+//  出力: P🌟a🌟s🌟s🌟w🌟o🌟r🌟d🌟
+//  変更したい絵文字をこの行の '🌟' の部分に置き換えるだけ password += '🌸';
+
+
   
   
   
