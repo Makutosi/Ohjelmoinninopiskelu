@@ -22,3 +22,6 @@ function checkEvenOrOdd() {
   
   var button = document.getElementById('checkButton');        // ボタン要素を取得
   button.onclick = checkEvenOrOdd;                            // ボタンがクリックされたときに関数を実行
+
+/* ===	厳密な等価演算子	型と値の両方が同じ場合のみtrueを返す
+   ==	等価演算子	型の違いを無視して値だけを比較する */

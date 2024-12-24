@@ -48,7 +48,7 @@ function generatePassword(word) {
     document.getElementByIdを使い、HTML内の要素を操作して表示結果を更新
     入力単語の長さに制限はなく、どんな文字列でも対応可能*/
 
-//variation 1
+//version 1
 /* 
 function generatePassword(word) {
   let password = '';
