@@ -1,5 +1,6 @@
 /* Press the button and it will print the day of the week */
 
+/*
 document.getElementById('dayButton').addEventListener('click', function () {
     var dayDisplay = document.getElementById('dayDisplay'); // 表示用の<p>要素を取得
     var date = new Date(); // 現在の日付と時刻を取得するDateオブジェクトを作成
@@ -35,6 +36,7 @@ document.getElementById('dayButton').addEventListener('click', function () {
     dayDisplay.textContent = 'Today is ' + dayName + '.'; // 決定した曜日名を<p>要素に表示
 });
 
+*/
 /* クリックするたびに現在の曜日を正確に表示する
    switch文
     dayの値（0～6）に応じて対応する曜日名を選択
@@ -44,3 +46,19 @@ document.getElementById('dayButton').addEventListener('click', function () {
 textContent
     <p>要素（id="dayDisplay"）の内容を変更。'Today is ' + dayName + '.'という文字列を表示。*/
 
+    function getDayOfWeek() {
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var today = new Date();
+        var day = today.getDay();
+        return days[day];
+    }
+    
+    function showDay() {
+        var dayDisplay = document.getElementById("dayDisplay");
+        var day = getDayOfWeek();
+        dayDisplay.textContent = "Today is " + day + ".";
+    }
+    
+    var button = document.getElementById("dayButton");
+    button.addEventListener("click", showDay);
+    
