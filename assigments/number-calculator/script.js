@@ -16,7 +16,7 @@ function calculate() {
   var num5 = validateInput(input5, "num5");
 
   if (num1 === null || num2 === null || num3 === null || num4 === null || num5 === null) {
-    return; // 無効な入力があれば計算を中止
+    return; // 無効な入力があれば計算を中止, nullはプログラミングで「値が存在しないこと」を表す特別な値
   }
 
   // 合計と平均を計算
@@ -46,5 +46,28 @@ function validateInput(input, fieldName) {
 
 // ボタンのクリックイベントを設定
 document.getElementById("calculateButton").onclick = calculate;
+
+/* 
+validateInput(input1, "num1"); 関数の呼び出し
+input1: num1フィールドに入力した文字列
+"num1": フィールド名（入力欄の名前）を文字列として渡す。これはエラーの警告メッセージに使われる。
+
+validateInput(input, fieldName)　関数の定義
+input: 関数に渡される実際の入力値を受け取る引数の名前。
+fieldName: エラー時にどのフィールドで問題が発生したかを表示するための引数の名前
+
+(input.trim() === "")　trim()は文字列の両端にある「余分な空白」を取り除くメソッド
+=== ""で、その文字列が空であるかどうかを確認
+
+var number = parseFloat(input);
+parseFloat()は文字列を「浮動小数点数」に変換するJavaScriptの関数
+
+(isNaN(number))
+isNaN()は値がNaN（数値ではない）であるかどうかを判定する関数　（Not-a-Number）
+
+return　関数の結果（戻り値）を呼び出し元に返すためのキーワード
+return null;　関数の結果として「値がない（無効）」ことを返す。
+return number;　関数の結果として、有効な数値を返す。
+*/ 
 
   
