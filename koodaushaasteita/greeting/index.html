@@ -1,0 +1,32 @@
+<!-- Create a function in the file called greeting and write a popup window inside it: alert('Hello world');
+Now create a button in the index.html file that calls that function.
+Open the index.html file in your browser. Does the popup window appear?
+Expand the task so that the words are in different windows.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <script src="koodi.js"></script>
+</head>
+<body>
+    <button onclick="greeting()">Click me</button>
+</body>
+</html>
+
+<!-- 
+ボタンをクリックすると、「Hello」と「World」が別々のポップアップウィンドウに表示される
+
+defer の主な特徴
+非同期的にスクリプトを読み込む
+
+defer を指定すると、スクリプトの読み込みが非同期に行われるる（他のリソースの読み込みを妨げない）。
+ただし、スクリプトの実行は HTML のパース（解析）が完了した後に行われるる。
+
+実行順序を保証
+defer を付けた複数のスクリプトがある場合、HTML に記述された順序で実行される。
+
+DOM の準備が整った後にスクリプトを実行
+defer を使うと、スクリプトが DOM ツリーの構築完了後に実行されるため、スクリプト内で DOM 要素を安全に操作できる。-->
