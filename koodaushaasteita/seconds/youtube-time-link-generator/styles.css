@@ -1,0 +1,41 @@
+/* A program to set a YouTube video link to a specific time (e.g. the start of a specific melody) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  a {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #displayLink {
+    display: none;        /* 初期状態で非表示 */
+    color: #333;          /* テキストの色 */
+    margin-top: 10px;     /* 上部に余白を追加 */
+  } 
+  

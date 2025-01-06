@@ -1,0 +1,33 @@
+<!-- A program to set a YouTube video link to a specific time (e.g. the start of a specific melody) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Time Link Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>YouTube Time Link Generator</h1>
+  <form id="timeForm">
+    <div>
+      <label for="url">YouTube URL:</label>
+      <input type="url" id="url" placeholder="https://youtu.be/..." required>
+    </div>
+    <div>
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" min="0" value="0">
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" min="0" max="59" value="0">
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" min="0" max="59" value="0">
+    </div>
+    <button type="button" id="generateButton">Generate Link</button>
+  </form>
+  <a id="generatedLink" href="#" target="_blank" style="display: none;">Open Generated Link</a>
+  <p id="displayLink"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

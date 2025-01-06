@@ -9,7 +9,7 @@ console.log(seconds(10, 10, 10)); // 36610
 
 /*
 関数定義:
-関数名は seconds で、引数として hours（時）、minutes（分）、seconds（秒）の3つを受け取るる。
+関数名は seconds で、引数として hours（時）、minutes（分）、seconds（秒）の3つを受け取る。
 
 計算:
 hours * 3600：1時間は3600秒なので、時を秒に変換。
@@ -46,6 +46,5 @@ function noReturn() {
 
 let result = noReturn(); // "Hello!" と表示される
 console.log(result); // undefined と表示される
-
 
 */
