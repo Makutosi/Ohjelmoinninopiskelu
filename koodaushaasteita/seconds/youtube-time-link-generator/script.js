@@ -1,4 +1,5 @@
-/* A program to set a YouTube video link to a specific time (e.g. the start of a specific melody) */
+/* A program that, when a user inputs a YouTube URL and a time (hours, minutes, seconds), 
+generates and displays a new YouTube link starting at the specified playback time. */
 
 document.getElementById('generateButton').addEventListener('click', function () {
     // 入力値を取得
