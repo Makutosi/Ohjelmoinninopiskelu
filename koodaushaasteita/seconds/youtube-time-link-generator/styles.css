@@ -1,5 +1,5 @@
 /* A program to set a YouTube video link to a specific time (e.g. the start of a specific melody) */
-
+/*
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -34,8 +34,105 @@ body {
   }
 
   #displayLink {
-    display: none;        /* 初期状態で非表示 */
-    color: #333;          /* テキストの色 */
-    margin-top: 10px;     /* 上部に余白を追加 */
+    display: none;        
+    color: #333;         
+    margin-top: 10px;     
   } 
+  */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 120px;
+    text-align: left;
+}
+
+label.full-width {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[type="url"] {
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+a {
+  display: inline-block; /* 横幅を自動調整して1行で表示 */
+  margin-bottom: 10px; /* 下のリンクと間隔を取る */
+  font-size: 18px;
+  text-decoration: none;
+  color: #007BFF;
+  word-break: break-word; /* 必要時のみ折り返す */
+  max-width: 100%; /* コンテナ幅を超えない */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#displayLink {
+  display: inline-block; /* 横幅を自動調整して1行で表示 */
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+  word-break: break-word;  /* 必要時のみ折り返す */
+  max-width: 100%; /* コンテナ幅を超えない */
+}
+
+
+
+
+
+
+
+
   

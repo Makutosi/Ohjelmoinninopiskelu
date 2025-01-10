@@ -8,6 +8,7 @@
   <title>YouTube Time Link Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+<!--
 <body>
   <h1>YouTube Time Link Generator</h1>
   <form id="timeForm">
@@ -30,4 +31,39 @@
 
   <script src="script.js"></script>
 </body>
+-->
+<body>
+  <h1>YouTube Time Link Generator</h1>
+  <form id="timeForm">
+    <div>
+      <label for="url" class="full-width">YouTube URL:</label>
+      <input type="url" id="url" placeholder="Enter YouTube URL" required>
+    </div>
+    <div>
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" min="0" value="0">
+    </div>
+    <div>
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" min="0" max="59" value="0">
+    </div>
+    <div>
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" min="0" max="59" value="0">
+    </div>
+    <div>
+      <button type="button" id="generateButton">Generate Link</button>
+    </div>
+  </form>
+  <div id="resultContainer">
+    <a id="generatedLink" target="_blank" style="display: none;">Open Generated Link</a>
+    <p id="displayLink" style="display: none;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+
 </html>
