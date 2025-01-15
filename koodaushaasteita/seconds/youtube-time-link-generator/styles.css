@@ -63,23 +63,31 @@ div {
 }
 
 label {
-    width: 120px;
+    width: 80px;
     text-align: left;
+    display: inline-block;
 }
-
+/*
 label.full-width {
     width: 100%;
     margin-bottom: 5px;
 }
-
+*/
 input {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     padding: 8px;
     font-size: 16px;
+    width: 100%; /**/
 }
 
 input[type="url"] {
-    width: 100%;
+  width: calc(100% - 90px); /* ラベル幅と余白を差し引いた入力欄の幅 */
+  box-sizing: border-box; /* パディングを含む幅計算 */
+}
+
+input[type="number"] { /**/
+    width: 20%;
+    text-align: center; 
 }
 
 button {
@@ -105,27 +113,27 @@ button:hover {
     text-align: left;
 }
 
-a {
-  display: inline-block; /* 横幅を自動調整して1行で表示 */
+#generatedLink {
+  display: block; /* 確実に新しい行に配置 */
   margin-bottom: 10px; /* 下のリンクと間隔を取る */
   font-size: 18px;
   text-decoration: none;
   color: #007BFF;
   word-break: break-word; /* 必要時のみ折り返す */
-  max-width: 100%; /* コンテナ幅を超えない */
+  /*max-width: 100%;  コンテナ幅を超えない */
 }
 
-a:hover {
+#generatedLink:hover {
     text-decoration: underline;
 }
 
 #displayLink {
-  display: inline-block; /* 横幅を自動調整して1行で表示 */
+  display: block;/* 確実に新しい行に配置 */
   font-size: 16px;
   color: #333;
-  margin-top: 5px;
+  margin-top: 10px; /* 上のリンクと間隔を取る */
   word-break: break-word;  /* 必要時のみ折り返す */
-  max-width: 100%; /* コンテナ幅を超えない */
+  /*max-width: 100%;  コンテナ幅を超えない */
 }
 
 
