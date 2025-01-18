@@ -3,17 +3,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 .container {
     text-align: center;
-    background: #ffffff;
+    position: fixed; /* 常に画面の固定位置に配置 */
+    top: 20px; /* 上から20px下げて配置 この値は自由に調整できます*/
+    left: 50%; /* 水平方向の中央揃え */
+    transform: translateX(-50%); /* 完全に中央に配置 */
+    width: 90%; /* レスポンシブ対応 */
+    max-width: 400px;
     padding: 20px;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
