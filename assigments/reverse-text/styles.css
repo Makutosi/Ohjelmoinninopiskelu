@@ -7,7 +7,7 @@ body {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* 画面中央から上に寄せる */
     height: 100vh;
 }
 
@@ -19,6 +19,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
+    margin-top: 10px; /* 上に10ピクセルの余白を追加 */
 }
 
 input {
