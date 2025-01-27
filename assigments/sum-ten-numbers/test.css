@@ -1,0 +1,68 @@
+/* The user can freely specify a range and calculate the total within that range */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#container {
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 5px; /* ボタンと入力フィールドの内側の余白を統一 */
+    font-size: 14px; /* フォントサイズを統一 */
+    border: 1px solid #ccc; /* 境界線を統一 */
+    border-radius: 5px; /* 角丸を統一 */
+    width: 100px; /* 幅を揃える */
+    text-align: center; /* テキストを中央寄せ */
+    box-sizing: border-box; /* サイズ計算を正確に */
+}
+/* 
+content-box モデル  要素の幅 (width) = コンテンツの幅 + padding + border
+100px + 10px + 10px + 2px + 2px = 124px
+
+box-sizing: border-box; を使うと  要素の幅 (width) = コンテンツの幅 (実際の幅から padding と border を引いた値)
+100px - 10px - 10px - 2px - 2px = 76px
+ボタンや入力フィールドの幅を揃えるとき、計算が不要になり、スタイルを簡潔に書ける。
+デザインの一貫性を保つのが簡単になります。
+*/
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* 
+transition: プロパティ名 変化時間;  あるプロパティの値が変化する際に、スムーズなアニメーション効果*/
+
+button:hover {
+    background-color: #218838;
+}
+
+#numberOutput {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+

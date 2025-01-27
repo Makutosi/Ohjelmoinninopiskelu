@@ -1,0 +1,24 @@
+<!-- The user can freely specify a range and calculate the total within that range -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Range</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Sum of a Range</h1>
+        <p>Please enter integers only. Ensure "End" is greater than "Start".</p>
+        <input type="number" id="startNumber" step="1" placeholder="From">
+        <br><br>
+        <input type="number" id="endNumber" step="1" placeholder="To">
+        <br><br>
+        <button onclick="calculateRangeSum()">Calculate</button>
+        <div id="numberOutput"></div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
