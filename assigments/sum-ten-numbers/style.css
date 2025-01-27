@@ -1,0 +1,43 @@
+/* Write a program that adds the first 10 numbers together */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#container {
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745; /* 緑色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* ダークグリーン */
+}
+
+#numberOutput {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
