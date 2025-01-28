@@ -39,7 +39,7 @@ body {
     margin-top: 10px;     
   } 
   */
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
@@ -106,34 +106,37 @@ button:hover {
 }
 
 #resultContainer {
-    margin-top: 20px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を中央揃えにする */
+  text-align: center; /* テキスト内容を中央揃えにする */
+}
+
+#generatedLink,
+#displayLink {
+  font-size: 16px; /* 同じサイズ感にする */
+  text-align: left; /* 左揃えに変更 */
+  width: 100%; /* 両方とも同じ幅で配置 */
+  max-width: 400px; /* 最大幅を設定して整列 */
+  margin: 0 auto; /* 親コンテナの中央に配置 */
+  white-space: nowrap; /* 折り返さず一行で表示 */
+  overflow-x: auto; /* 横スクロールを有効にする */
+  word-wrap: normal; /* 単語の途中での折り返しを禁止 */
 }
 
 #generatedLink {
-  display: block; /* 確実に新しい行に配置 */
-  margin-bottom: 10px; /* 下のリンクと間隔を取る */
-  font-size: 18px;
+  font-size: 18px; /* 見出しとして少し大きく */
   text-decoration: none;
   color: #007BFF;
-  word-break: break-word; /* 必要時のみ折り返す */
-  /*max-width: 100%;  コンテナ幅を超えない */
+  margin-bottom: 10px; /* 下のリンクとの余白 */
 }
 
 #generatedLink:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #displayLink {
-  display: block;/* 確実に新しい行に配置 */
-  font-size: 16px;
   color: #333;
-  margin-top: 10px; /* 上のリンクと間隔を取る */
-  word-break: break-word;  /* 必要時のみ折り返す */
-  /*max-width: 100%;  コンテナ幅を超えない */
 }
 
 
