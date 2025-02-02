@@ -1,10 +1,11 @@
 /* */
 
 function getRandomCharacter() {
-    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*,.";
     var randomIndex = Math.floor(Math.random() * characters.length);
     return characters[randomIndex];
 }
+// charactersに、 , . 追加　（characters の中身が変われば、ランダムに選ばれる文字の種類も変わる）
 
 function generatePassword(word) {
     var password = "";
