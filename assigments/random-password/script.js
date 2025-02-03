@@ -1,4 +1,4 @@
-/* */
+/* Create a random password using English only, words of three or more letters, but without umlauts */
 
 function getRandomCharacter() {
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*,.";
@@ -6,6 +6,7 @@ function getRandomCharacter() {
     return characters[randomIndex];
 }
 // charactersに、 , . 追加　（characters の中身が変われば、ランダムに選ばれる文字の種類も変わる）
+// ランダムに選ぶ仕組みは変わらないが、どの文字が選ばれるかは characters によって決まる
 
 function generatePassword(word) {
     var password = "";
