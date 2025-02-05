@@ -29,4 +29,50 @@ function calculateDaysOld(birthYear, birthMonth, birthDay) {
   // Example usage
   var daysOld = calculateDaysOld(2000, 1, 1); // Born on January 1, 2000
   console.log("You have lived for " + daysOld + " days.");
+
+  /* 
+  関数の定義
+  function calculateDaysOld(birthYear, birthMonth, birthDay)
+  生年月日を入力すると、その日から今日までの経過日数（何日生きたか）を計算する
+
+  今日の日付を取得
+  var today = new Date();
+  var currentYear = today.getFullYear();
+  var currentMonth = today.getMonth() + 1; // 月は0から始まるため+1
+  var currentDay = today.getDate();
+
+  各月の累積日数を表す配列
+  var daysAtEndOfMonth = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365];
+
+  生まれた年の1月1日から誕生日までの日数
+  var birthDaysThisYear = daysAtEndOfMonth[birthMonth - 1] + birthDay;
+  daysAtEndOfMonth[birthMonth - 1] で、その月の1日までの日数を取得し、生まれた日 (birthDay) を加える
+  例：2000年5月20日生まれの場合
+  5月1日は daysAtEndOfMonth[5-1] = daysAtEndOfMonth[4] = 120 日目
+  20日を足す → 120 + 20 = 140　つまり、2000年1月1日から 5月20日 までは 140 日
+
+  今年の1月1日から今日までの日数
+  var currentDaysThisYear = daysAtEndOfMonth[currentMonth - 1] + currentDay;
+  例：今日が 2025年2月5日 の場合
+  daysAtEndOfMonth[2-1] = daysAtEndOfMonth[1] = 31 → 2月1日は 31日目
+  5日を足す → 31 + 5 = 36　　つまり、2025年1月1日から 2月5日 までは 36 日
+  
+  年数の差を計算
+  var totalDays = (yearsDifference * 365.25) + (currentDaysThisYear - birthDaysThisYear);
+  yearsDifference * 365.25
+  1年の平均日数 を 365.25 として、経過年数分の日数を計算
+  （うるう年の影響をざっくり考慮）
+
+  (currentDaysThisYear - birthDaysThisYear)
+  今年の経過日数 ー 生まれた年の経過日数　→ 今年の誕生日が来たかどうかを調整
+  
+  例：2000年5月20日生まれで、今日が 2025年2月5日 の場合
+
+  25年 × 365.25 → 9131.25 日
+  currentDaysThisYear (36) - birthDaysThisYear (140) → -104
+  合計 9131.25 - 104 = 9027.25 → Math.floor(9027.25) = 9027 　つまり、9027日生きている
+  
+  結果を返す
+  return Math.floor(totalDays);
+  小数点以下を切り捨て、整数の日数を返す*/
   
