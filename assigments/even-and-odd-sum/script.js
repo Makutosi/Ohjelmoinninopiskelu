@@ -82,13 +82,16 @@ for (var i = evenStart; i < num2; i += 2) {
     evenSum += i;
 }
 
-var evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;    
+最初の偶数を探す var evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;    
 evenStart は、ループの開始地点を決める変数 
 三項演算子 「条件が true なら 値1 を、それ以外なら 値2 を使う」
 偶数ならそのまま使う,奇数なら +1 して偶数にする
 
-for (var i = evenStart; i < num2; i += 2)  -> for (初期値; 条件; 更新処理) { 処理内容 }
+偶数を 2 ずつ増やしながらループ for (var i = evenStart; i < num2; i += 2)  -> for (初期値; 条件; 更新処理) { 処理内容 }
 i を evenStart（最初の偶数）に設定, i が num2 より小さい間はループを続ける, i に 2 を足して次の偶数にする
+
+evenNumbers.push(i); -> i を偶数リストに追加
+evenSum += i; -> i を合計に加算
 
 push(i) → 配列に i を追加
 += i → 合計値に i を加算
@@ -99,11 +102,17 @@ push(i) → 配列に i を追加
 var oddStart = (num1 % 2 !== 0) ? num1 : num1 + 1;
 for (var i = oddStart; i < num2; i += 2) {
     oddNumbers.push(i); // 配列に追加
-    oddSum += i;
+    oddSum += i; // 奇数の合計を更新
 }
-num1 が奇数ならそのまま、偶数なら +1 して奇数から始める。
-for ループで i を2ずつ増やしながら num2 の手前までの奇数を取得。
-oddNumbers に文字列として追加し、oddSum に加算
+
+最初の奇数を探す var oddStart = (num1 % 2 !== 0) ? num1 : num1 + 1; 
+三項演算子 (条件) ? 値1 : 値2 -> num1 が奇数なら そのまま使う,偶数なら +1 して奇数にする
+
+奇数を 2 ずつ増やしながらループ for (var i = oddStart; i < num2; i += 2) -> for (初期値; 条件; 更新処理) { 処理内容 }
+i を oddStart（最初の奇数）に設定, i が num2 より小さい間はループを続ける, i に 2 を足して次の奇数にする
+
+oddNumbers.push(i); -> i を奇数リストに追加
+oddSum += i; -> i を合計に加算
 
 結果をHTMLに出力
 document.getElementById("evenResult").innerHTML = "Even Numbers: " + evenNumbers + "<br>Sum of Even Numbers: " + evenSum;
