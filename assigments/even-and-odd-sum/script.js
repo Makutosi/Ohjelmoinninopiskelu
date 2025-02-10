@@ -23,15 +23,15 @@ function calculate() {
     // Determine the starting point for even numbers
     var evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;
     for (var i = evenStart; i < num2; i += 2) {
-        evenNumbers.push(i); // 配列に追加
-        evenSum += i;
+        evenNumbers.push(i); // 偶数を配列に追加
+        evenSum += i; // 偶数の合計を更新
     }
 
     // Determine the starting point for odd numbers
     var oddStart = (num1 % 2 !== 0) ? num1 : num1 + 1;
     for (var i = oddStart; i < num2; i += 2) {
-        oddNumbers.push(i); // 配列に追加
-        oddSum += i;
+        oddNumbers.push(i); // 奇数を配列に追加
+        oddSum += i; // 奇数の合計を更新
     }
 
     // 配列をカンマ区切りの文字列に変換
@@ -70,34 +70,32 @@ num1 が num2 以上だった場合、アラートを表示して終了。
 
 偶数・奇数の変数を用意
 それぞれ格納するための変数を定義
-var evenNumbers = [];  偶数の配列 
-var oddNumbers = [];  奇数の配列 
-var evenSum = 0;  偶数の合計
-var oddSum = 0;  奇数の合計
+var evenNumbers = [];  偶数を格納するための配列 （Array）
+var oddNumbers = [];  奇数を格納するための 配列（Array） 
+var evenSum = 0;  偶数の合計　ループの中で、偶数が見つかるたびに 加算 される
+var oddSum = 0;  奇数の合計　　ループの中で、奇数が見つかるたびに 加算 される
 
-偶数のリストと合計を計算
+*偶数のリストと合計を計算
 var evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;
 for (var i = evenStart; i < num2; i += 2) {
     evenNumbers.push(i); // 配列に追加
     evenSum += i;
 }
-num1 が偶数ならそのまま、奇数なら +1 して偶数から始める。
-三項演算子 (? :) を使った処理  (evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;)
-num1 が偶数なら、そのまま evenStart にする。
-num1 が奇数なら、+1 して次の偶数を evenStart にする。
 
-for (var i = evenStart; i < num2; i += 2)
-i = evenStart で、最初の偶数を設定。
-i < num2 の間ループを実行。
-i += 2 で 2 ずつ増やす（偶数だけ取得するため）
+var evenStart = (num1 % 2 === 0) ? num1 : num1 + 1;    
+evenStart は、ループの開始地点を決める変数 
+三項演算子 「条件が true なら 値1 を、それ以外なら 値2 を使う」
+偶数ならそのまま使う,奇数なら +1 して偶数にする
 
-evenNumbers.push(i); // 配列に追加
-evenSum += i; -> evenSum に i を加算（合計の計算）
+for (var i = evenStart; i < num2; i += 2)  -> for (初期値; 条件; 更新処理) { 処理内容 }
+i を evenStart（最初の偶数）に設定, i が num2 より小さい間はループを続ける, i に 2 を足して次の偶数にする
 
-for ループで i を2ずつ増やしながら num2 の手前までの偶数を取得。
-evenNumbers に文字列として追加し、evenSum に加算
+push(i) → 配列に i を追加
++= i → 合計値に i を加算
 
-奇数のリストと合計を計算
+
+
+*奇数のリストと合計を計算
 var oddStart = (num1 % 2 !== 0) ? num1 : num1 + 1;
 for (var i = oddStart; i < num2; i += 2) {
     oddNumbers.push(i); // 配列に追加
