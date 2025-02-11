@@ -1,0 +1,45 @@
+/* Write a program that prints the numbers 1-100 to the screen, but
+so that if the number is divisible by 3, it prints hip and
+if it is divisible by 5, it prints heijaa and if it is divisible by both 5 and 3 */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    list-style: none; /* リストのデフォルトのマークを削除 */
+    padding: 0;
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#output li {
+    background: white;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
