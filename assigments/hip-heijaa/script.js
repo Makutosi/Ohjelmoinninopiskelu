@@ -29,6 +29,28 @@ function printNumbers() {
 // ボタンがクリックされたら printNumbers() を実行
 document.getElementById("showButton").addEventListener("click", printNumbers);
 
+/* 
+var output = document.getElementById("output");
+HTML 内の id="output" を持つ要素  <ul id="output"></ul>を取得し,output に対して、リストを追加
+
+output.innerHTML = ""; ボタンを押すたびに新しいリストを生成するため、以前のリストを削除 
+
+var fragment = document.createDocumentFragment();
+document.createDocumentFragment() は 仮のコンテナ で、DOM の再描画回数を減らして処理を効率化
+
+document.createElement("li") で リストの項目 (<li>) を作成
+
+fragment.appendChild(li); さっき作った <li> 要素を 一時的に fragment に追加 
+appendChild() は、指定した要素を 親要素の最後に追加 するメソッド
+例えば、HTML の <ul> 要素の中に <li> を追加する場合などに使います
+
+output.appendChild(fragment); ループが終わったあと、fragment に追加した全ての <li> を output に追加
+
+document.getElementById("showButton").addEventListener("click", printNumbers);
+document.getElementById("showButton") で、id="showButton" を持つ ボタン を取得。
+.addEventListener("click", printNumbers) で、そのボタンがクリックされたら printNumbers() を実行するように設定
+*/
+
 /*
 function printNumbers() {
     var output = document.getElementById("output");
