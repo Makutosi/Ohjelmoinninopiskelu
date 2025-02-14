@@ -1,0 +1,28 @@
+/* The program shuffles a deck of cards and draws five cards, when I press a button, it prints five cards. */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#cardDisplay {
+    font-size: 20px;
+    margin-top: 20px;
+}
