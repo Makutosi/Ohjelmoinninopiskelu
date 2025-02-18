@@ -1,0 +1,24 @@
+<!-- Enter a Scrabble word and the program will calculate the points for each letter -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Score Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Scrabble Score Calculator</h2>
+    <p>Vowels: A, E, I, O, U = 1p<br>
+       S, C, R, B, L = 2p<br>
+       Umlaut: Ä, Ö, Ü = 5p<br>
+       X, Y, Z, W = 8p<br>
+       K, G, P = 10p<br>
+       Other letters = 3p (only for valid alphabet letters)</p>
+    <input type="text" id="word" placeholder="Enter a word">
+    <button onclick="calculateScore()">Calculate</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Enter a Scrabble word and the program will calculate the points for each letter */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
