@@ -1,0 +1,19 @@
+/* Choose 7 different numbers from 40 numbers (1-40) */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
