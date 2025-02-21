@@ -1,0 +1,51 @@
+<!-- Make a "contact_us" page and make a form there where you ask all sorts of questions, 
+using what you learned above. Try to use all the different types (bold in the text) in your form to your advantage. 
+Check the form with JavaScript to make sure all the fields have something. 
+Use all the different form options (text, bullet, check, dropdown, text box)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us Form</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+            
+            <label for="job">Job:</label>
+            <select id="job" name="job">
+                <option value="">Please select</option>
+                <option value="engineer">Engineer</option>
+                <option value="designer">Designer</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label>Programming Languages:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="language" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="language" value="JavaScript">
+                <label for="js">JavaScript</label>
+            </div>
+            
+            <label for="message">What do you want to do with programming?</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

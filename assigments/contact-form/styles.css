@@ -1,0 +1,80 @@
+/* Make a "contact_us" page and make a form there where you ask all sorts of questions */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e0d4; /* 明るいベージュ */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #f1e5d7; /* 少し明るい色 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #5a5a42;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%; /* 幅を100%に設定 */
+    padding: 8px 10px; /* 左右の余白を調整 */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* パディングも含めて幅を設定 */
+}
+
+textarea {
+    height: 100px; /* テキストエリアの高さを調整 */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row; /* 横並びに変更 */
+    gap: 15px; /* それぞれの要素の間隔を調整 */
+    align-items: center; /* 中央揃え */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-group label input {
+    margin-right: 5px; /* チェックボックスとラベルの間隔 */
+}
+ 
+
+button {
+    background-color: #d0a88d; /* 少し鮮やかな温かみのある色 */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #b88b63; /* マウスオーバー時に少し濃い色に */
+}
+
+
+
