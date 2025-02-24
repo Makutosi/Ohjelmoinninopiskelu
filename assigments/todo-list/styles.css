@@ -1,0 +1,49 @@
+/* */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#container {
+    width: 300px;
+    margin: auto;
+}
+
+#userInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* パディングが幅に含まれるようにする */
+    margin-bottom: 10px; /* 入力ボックスとボタンの間にスペースを追加 */
+    font-size: 16px; /* タスクリストと同じフォントサイズ */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    background: lightgreen;
+    text-decoration: line-through;
+}
+
+button {
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* ボタンを大きくする */
+    font-size: 16px; /* ボタンのフォントサイズをタスクリストに合わせる */
+}
