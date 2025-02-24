@@ -18,7 +18,7 @@ function calculateResult() {
     }
     try {
         display.value = eval(display.value);
-    } catch (e) {
+    } catch (error) {
         display.value = "Error";
     }
 }
