@@ -1,0 +1,81 @@
+/* Lomake B */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3E0;
+    color: #5C4033;
+    text-align: center;
+}
+
+h1 {
+    color: #BC8F8F;
+}
+
+#title, #description {
+    text-align: center; /* 中央揃え */
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #F5DEB3;
+    border-radius: 8px;
+    text-align: left; /* フォーム全体を左寄せ */
+}
+
+label {
+    font-weight: bold; /* 太文字にする */
+    text-align: left; /* 左寄せ */
+    display: block; /* ブロック要素にして改行 */
+    margin-top: 10px; /* 上に少し余白を追加 */
+}
+
+p {
+    text-align: left; /* 左寄せ */
+    margin: 5px 0; /* 上下の余白を少し調整 */
+}
+
+input, select, textarea {
+    width: 100%; /* 幅を100%にする */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #8B5A2B;
+    border-radius: 4px;
+}
+
+/* フィールドセットのデザイン調整 */
+fieldset {
+    border: none; /* デフォルトの枠線をなくす */
+    margin: 10px 0; /* 上下の余白 */
+    padding: 0;
+}
+
+/* ラジオボタン・チェックボックスグループのデザイン */
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px; /* 各選択肢の間隔を確保 */
+    align-items: center;
+}
+
+/* ボタンとラベルの間隔をなくす */
+.radio-group input, .checkbox-group input {
+    margin: 0;
+}
+
+.radio-group label, .checkbox-group label {
+    margin-left: 2px; /* ほぼ密着させる */
+}
+
+button {
+    background-color: #BC8F8F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8B5A2B;
+}

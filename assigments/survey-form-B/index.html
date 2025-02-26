@@ -1,0 +1,75 @@
+<!-- Lomake B -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form.</p>
+
+    <form id="survey-form">
+        <label id="nameinput" for="name">Name:</label>
+        <p>Enter your full name (at least 2 characters).</p>
+        <input type="text" id="name" name="name" required minlength="2">
+    
+
+        <label id="emailinput" for="email">Email:</label>
+        <p>Enter a valid email address.</p>
+        <input type="email" id="email" name="email" required>
+
+
+        <label id="timeinput" for="age">Age:</label>
+        <p>Enter your age (between 18 and 100).</p>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+
+
+        <label for="drop-down">Choose an option:</label>
+        <select id="drop-down" name="options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+        
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+        
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your interests:</legend>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">Sports</label>
+        
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Music</label>
+        
+                <input type="checkbox" id="movies" name="interest" value="movies">
+                <label for="movies">Movies</label>
+            </div>
+        </fieldset>
+        
+
+        <p>Comments:</p>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
