@@ -1,0 +1,56 @@
+<!-- Multiplication Table / 
+ Enter a number and press the button. 
+ The program prints the multiplications of the entered number from one to ten. / 28.6.2025 -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;    
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Multiplication Table Generator</h1>
+    <p>Enter a number and press the button.</p>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="showTable()">Show Multiplication Table</button> <!--showTable() 実行されるJavaScriptの関数-->
+    <div id="result"></div>
+
+    <script>
+        function showTable() {
+            const number = document.getElementById("numberInput").value; /* 入力ボックスの値（ユーザーが入力した数字）を取得*/
+            const resultDiv = document.getElementById("result"); /* 結果を表示するための <div> 要素を取得 */
+            resultDiv.innerHTML = ""; /* 前に出した掛け算の結果を 全部消す（リセット）*/
+
+            if (number === "") {
+                resultDiv.innerHTML = "<p>Please enter a number.</p>"
+                return;
+            }
+
+            for (let i = 1; i <= 10; i++) {
+                resultDiv.innerHTML += `<p>${number} x ${i} = ${number * i}</p>`; /*掛け算の結果を一行ずつ <div> に追加*/
+            }
+        }    
+    </script>
+ </body>
+ </html>
