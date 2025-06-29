@@ -1,0 +1,150 @@
+/* A program to set a YouTube video link to a specific time (e.g. the start of a specific melody) */
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  a {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #displayLink {
+    display: none;        
+    color: #333;         
+    margin-top: 10px;     
+  } 
+  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 80px;
+    text-align: left;
+    display: inline-block;
+}
+/*
+label.full-width {
+    width: 100%;
+    margin-bottom: 5px;
+}
+*/
+
+input {
+    /*flex-grow: 1;*/
+    padding: 8px;
+    font-size: 16px;
+    width: 100%; /**/
+}
+
+input[type="url"] {
+  width: calc(100% - 90px); /* ラベル幅と余白を差し引いた入力欄の幅 */
+  box-sizing: border-box; /* パディングを含む幅計算 */
+}
+
+input[type="number"] { /**/
+    width: 20%;
+    text-align: center; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultContainer {
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を中央揃えにする */
+  text-align: center; /* テキスト内容を中央揃えにする */
+}
+
+#generatedLink,
+#displayLink {
+  font-size: 16px; /* 同じサイズ感にする */
+  text-align: left; /* 左揃えに変更 */
+  width: 100%; /* 両方とも同じ幅で配置 */
+  max-width: 400px; /* 最大幅を設定して整列 */
+  margin: 0 auto; /* 親コンテナの中央に配置 */
+  white-space: nowrap; /* 折り返さず一行で表示 */
+  overflow-x: auto; /* 横スクロールを有効にする */
+  word-wrap: normal; /* 単語の途中での折り返しを禁止 */
+}
+
+#generatedLink {
+  font-size: 18px; /* 見出しとして少し大きく */
+  text-decoration: none;
+  color: #007BFF;
+  margin-bottom: 10px; /* 下のリンクとの余白 */
+}
+
+#generatedLink:hover {
+  text-decoration: underline;
+}
+
+#displayLink {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+  
